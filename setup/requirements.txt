@@ -9,6 +9,8 @@ pyarrow>=14.0          # parquet I/O for the minimal-pair datasets
 # --- model stack -------------------------------------------------------------
 torch>=2.2             # [2.14.0]  MPS is used automatically on Apple Silicon
 transformers>=4.40     # [5.16.1]  v5 changed get_text_features' return type; both APIs are handled
+pillow>=10.0           # [12.3.0]  image loading for the image-text association probe
+scipy>=1.11            # rank correlations in the per-category analysis
 
 # --- analysis & figures ------------------------------------------------------
 matplotlib>=3.8
