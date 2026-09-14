@@ -1,0 +1,27 @@
+{
+  "technique": "ex4_translate_indomain",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.4034494420020291,
+    "positive": 0.7321965897693079,
+    "negative": 0.052805280528052806,
+    "hybrid": 0.3948620361560419
+  },
+  "test": {
+    "all": 0.3980385525870815,
+    "positive": 0.7497584541062802,
+    "negative": 0.047866805411030174,
+    "hybrid": 0.36940686784599375
+  },
+  "tie_rate_test": 0.0,
+  "geometry": "indomain",
+  "operator": "mean translation",
+  "alpha": 0.1,
+  "train_breakdown": {
+    "all": 40.34494420020291,
+    "positive": 73.21965897693079,
+    "negative": 5.2805280528052805,
+    "hybrid": 39.48620361560419
+  },
+  "selected_on": "tr_rows"
+}

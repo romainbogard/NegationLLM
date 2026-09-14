@@ -1,0 +1,28 @@
+{
+  "technique": "ex4_eq2_then_subspace_indomain",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.5610415962123774,
+    "positive": 0.7853560682046138,
+    "negative": 0.34213421342134215,
+    "hybrid": 0.5375832540437678
+  },
+  "test": {
+    "all": 0.5650997632735881,
+    "positive": 0.7971014492753623,
+    "negative": 0.3537981269510926,
+    "hybrid": 0.5265348595213319
+  },
+  "tie_rate_test": 0.0,
+  "operator": "Eq.2 (in-domain centre) then rank-r scaling, indomain basis",
+  "lambda": 1.1,
+  "rank": 5,
+  "beta": -0.5,
+  "train_breakdown": {
+    "all": 56.104159621237734,
+    "positive": 78.53560682046138,
+    "negative": 34.21342134213422,
+    "hybrid": 53.758325404376784
+  },
+  "selected_on": "tr_rows"
+}

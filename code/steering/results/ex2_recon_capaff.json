@@ -1,0 +1,25 @@
+{
+  "technique": "ex2_recon_capaff",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.4930672979370984,
+    "positive": 0.8144433299899699,
+    "negative": 0.056105610561056105,
+    "hybrid": 0.566127497621313
+  },
+  "test": {
+    "all": 0.4859655055799797,
+    "positive": 0.8386473429951691,
+    "negative": 0.05098855359001041,
+    "hybrid": 0.5411030176899063
+  },
+  "tie_rate_test": 0.0,
+  "coef": {
+    "cap": 1.0,
+    "anc": 1.25,
+    "neg": -2.4
+  },
+  "normalise": true,
+  "k": 1.25,
+  "beta": 2.4
+}

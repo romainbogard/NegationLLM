@@ -1,0 +1,22 @@
+{
+  "technique": "ex5_synthetic_fit_wholebench",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.6499830909705783,
+    "positive": 0.8784448818897638,
+    "negative": 0.46898395721925135,
+    "hybrid": 0.5874751491053678
+  },
+  "test": {
+    "all": 0.6499830909705783,
+    "positive": 0.8784448818897638,
+    "negative": 0.46898395721925135,
+    "hybrid": 0.5874751491053678
+  },
+  "tie_rate_test": 0.0,
+  "fitted_on": "1500 synthetic questions, surrogate image = text of the scene",
+  "tuned_on_benchmark": "nothing",
+  "c": 0.5,
+  "synthetic_fit_acc": 0.9993333333333333,
+  "n_scalars": 18
+}

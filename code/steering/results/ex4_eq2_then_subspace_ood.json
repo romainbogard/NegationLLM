@@ -1,0 +1,28 @@
+{
+  "technique": "ex4_eq2_then_subspace_ood",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.5630706797429827,
+    "positive": 0.7893681043129388,
+    "negative": 0.33773377337733773,
+    "hybrid": 0.5432921027592769
+  },
+  "test": {
+    "all": 0.5674670273926277,
+    "positive": 0.8009661835748793,
+    "negative": 0.3517169614984391,
+    "hybrid": 0.5317377731529657
+  },
+  "tie_rate_test": 0.0,
+  "operator": "Eq.2 (in-domain centre) then rank-r scaling, ood basis",
+  "lambda": 1.1,
+  "rank": 6,
+  "beta": -0.5,
+  "train_breakdown": {
+    "all": 56.30706797429828,
+    "positive": 78.93681043129388,
+    "negative": 33.77337733773377,
+    "hybrid": 54.329210275927686
+  },
+  "selected_on": "tr_rows"
+}

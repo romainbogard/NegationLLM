@@ -1,0 +1,28 @@
+{
+  "technique": "ex2_recon_centred_global",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.6939465674670274,
+    "positive": 0.9197592778335005,
+    "negative": 0.385038503850385,
+    "hybrid": 0.7469077069457659
+  },
+  "test": {
+    "all": 0.6733175515725397,
+    "positive": 0.8975845410628019,
+    "negative": 0.37669094693028093,
+    "hybrid": 0.72840790842872
+  },
+  "tie_rate_test": 0.0,
+  "coef": {
+    "aff": 1.6016,
+    "anc": 1.3333333333333335,
+    "anc_na": -0.15999999999999998,
+    "anc_nn": -0.21546666666666664,
+    "neg": -0.5333333333333334,
+    "cap": 0.01706666666666667
+  },
+  "normalise": true,
+  "c": 0.85,
+  "note": "one (k, beta, tau) shared by all caption classes"
+}

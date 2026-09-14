@@ -1,0 +1,28 @@
+{
+  "technique": "ex4_reflect_indomain",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.4051403449442002,
+    "positive": 0.7512537612838516,
+    "negative": 0.056105610561056105,
+    "hybrid": 0.3786869647954329
+  },
+  "test": {
+    "all": 0.4095366925938451,
+    "positive": 0.7565217391304347,
+    "negative": 0.06555671175858481,
+    "hybrid": 0.3798126951092612
+  },
+  "tie_rate_test": 0.0,
+  "geometry": "indomain",
+  "operator": "reflect",
+  "rank": 4,
+  "beta": -1.0,
+  "train_breakdown": {
+    "all": 40.514034494420024,
+    "positive": 75.12537612838516,
+    "negative": 5.6105610561056105,
+    "hybrid": 37.86869647954329
+  },
+  "selected_on": "tr_rows"
+}

@@ -1,0 +1,40 @@
+{
+  "technique": "ex2_recon_perclass",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.8028407169428475,
+    "positive": 0.872617853560682,
+    "negative": 0.7722772277227723,
+    "hybrid": 0.7630827783063748
+  },
+  "test": {
+    "all": 0.7950625634088603,
+    "positive": 0.8830917874396135,
+    "negative": 0.7523413111342352,
+    "hybrid": 0.7429760665972945
+  },
+  "tie_rate_test": 0.0,
+  "coef": {
+    "aff|positive": 0.07846891736793182,
+    "anc|positive": -3.14761292236934,
+    "anc_na|positive": 1.6320062534240407,
+    "anc_nn|positive": 0.660440457014877,
+    "neg|positive": -0.1929284700857558,
+    "cap|positive": 0.08635644067630066,
+    "aff|negative": 0.7812980592946731,
+    "anc|negative": 0.11022739385336888,
+    "anc_na|negative": -0.2642809229221571,
+    "anc_nn|negative": 1.5285591774591454,
+    "neg|negative": -1.2574704690819856,
+    "cap|negative": -0.08866308593988578,
+    "aff|hybrid": 2.8395460967038266,
+    "anc|hybrid": 2.1638323993368713,
+    "anc_na|hybrid": 0.6498321000640906,
+    "anc_nn|hybrid": -0.17951468056021425,
+    "neg|hybrid": -4.196360286497682,
+    "cap|hybrid": -0.1666586093889319
+  },
+  "normalise": true,
+  "c": 0.85,
+  "note": "independent (k, beta, tau) per common.caption_type"
+}

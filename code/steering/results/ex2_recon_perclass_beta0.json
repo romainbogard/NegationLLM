@@ -1,0 +1,40 @@
+{
+  "technique": "ex2_recon_perclass_beta0",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.6861684139330403,
+    "positive": 0.8716148445336008,
+    "negative": 0.66996699669967,
+    "hybrid": 0.5242626070409134
+  },
+  "test": {
+    "all": 0.691917483936422,
+    "positive": 0.8801932367149758,
+    "negative": 0.63579604578564,
+    "hybrid": 0.5452653485952134
+  },
+  "tie_rate_test": 0.0,
+  "coef": {
+    "aff|positive": 0.014468917367931815,
+    "anc|positive": -3.190279589036007,
+    "anc_na|positive": 1.6320062534240407,
+    "anc_nn|positive": 0.660440457014877,
+    "neg|positive": -0.0,
+    "cap|positive": 0.08635644067630066,
+    "aff|negative": 0.7386313926280066,
+    "anc|negative": -0.15643927281329773,
+    "anc_na|negative": -0.22161425625549042,
+    "anc_nn|negative": 1.5285591774591454,
+    "neg|negative": -0.0,
+    "cap|negative": -0.08866308593988578,
+    "aff|hybrid": 0.7062127633704935,
+    "anc|hybrid": 1.3638323993368713,
+    "anc_na|hybrid": 0.6498321000640906,
+    "anc_nn|hybrid": -0.17951468056021425,
+    "neg|hybrid": -0.0,
+    "cap|hybrid": -0.1666586093889319
+  },
+  "normalise": true,
+  "c": 0.85,
+  "note": "WINNER with beta forced to 0 (no repulsion)"
+}

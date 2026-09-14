@@ -1,0 +1,27 @@
+{
+  "technique": "ex4_translate_ood",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.3997294555292526,
+    "positive": 0.708124373119358,
+    "negative": 0.06820682068206821,
+    "hybrid": 0.3939105613701237
+  },
+  "test": {
+    "all": 0.3878931349340548,
+    "positive": 0.7140096618357488,
+    "negative": 0.060353798126951096,
+    "hybrid": 0.36420395421436
+  },
+  "tie_rate_test": 0.0,
+  "geometry": "ood",
+  "operator": "mean translation",
+  "alpha": 0.05,
+  "train_breakdown": {
+    "all": 39.97294555292526,
+    "positive": 70.81243731193581,
+    "negative": 6.820682068206821,
+    "hybrid": 39.39105613701237
+  },
+  "selected_on": "tr_rows"
+}

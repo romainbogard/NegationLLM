@@ -59,11 +59,35 @@ to `.setup.log`. Exit codes: `0` success, `1` failure, `2` bad usage.
 │   └── requirements.txt                dependency stack (tested versions in brackets)
 ├── code/
 │   ├── 00_load_nevir.ipynb             NevIR → oriented, categorised minimal pairs → parquet
-│   └── 01_negation_subspace_rank.ipynb the rank experiment ("manip 0")
+│   ├── 01_negation_subspace_rank.ipynb the rank experiment ("manip 0")
+│   ├── 04_conjunction_arithmetic.ipynb does "A and B" decompose as e(A) + e(B) + a?
+│   └── make_conjunction_dataset.py     word bank + pair/triple generator for notebook 04
 └── data/                               created on first run; not tracked
     ├── nevir_pairs.parquet             produced by notebook 00
+    ├── conjunction_pairs.csv           produced by make_conjunction_dataset.py
+    ├── conjunction_triples.csv         idem — the "A, B and C" condition
     └── cache/                          embedding cache + saved results (safe to delete)
 ```
+
+### Notebook 04 — conjunction as arithmetic
+
+The negation experiment asks whether $\Delta = e(\text{neg}) - e(\text{aff})$ is a constant direction.
+Notebook 04 asks the same question of the easiest possible composition — conjunction — where the analogue
+of $\Delta$ is the bias $a = e(A \text{ and } B) - e(A) - e(B)$, measured over 1400 noun pairs. It is the
+positive control for the whole project: whatever $\rho$ (translation share) conjunction reaches is the
+ceiling one should expect negation to approach, and the notebook reports $\rho$ with the same definition
+so the two numbers are directly comparable. It also carries the anisotropy control the rank experiment
+needs — every statistic is given raw *and* after removing the encoder's mean offset $\mu$, because in a
+cone any difference of this shape looks constant. The weights are **forced to one** throughout — the
+decomposition $e_{12} = e_1 + e_2 + \gamma r$ is an identity, and what is measured is whether $\gamma$
+and $r$ hold still across pairs. §9 pushes the same identity to three items, where the additive model
+predicts a coefficient of exactly 2. §10-§12 connect the notebook to Aggarwal et al., *Seeing What's Not
+There* (ICLR 2026): §10 compares our measured bias with their **anchor**, §11 reimplements their negation
+scope extraction and Eq. 2 correction and tunes $\lambda$ on NegBench COCO-MCQ, and §12 tests whether
+steering negated captions along the negation displacement $\bar\Delta$ beats plain CLIP — against a
+random-direction control, which it barely does. §13 then applies **IDEEA** (Wang et al., 2026,
+arXiv 2609.02089) — input-dependent steering by activation cluster matching — and tests two replacements
+for the rule-based negation classifier (a linear probe and IDEEA's own geometric gate).
 
 Run `00_load_nevir.ipynb` first: it creates `data/` and the parquet that notebook 01 consumes. Without it,
 notebook 01 falls back to a small built-in demo dataset (it says so in a banner) whose numbers are
