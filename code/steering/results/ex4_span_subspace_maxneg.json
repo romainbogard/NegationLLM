@@ -1,0 +1,47 @@
+{
+  "technique": "ex4_span_subspace_maxneg",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.6597903280351708,
+    "positive": 0.8104312938816449,
+    "negative": 0.5445544554455446,
+    "hybrid": 0.6165556612749762
+  },
+  "test": {
+    "all": 0.6533648968549205,
+    "positive": 0.8193236714975846,
+    "negative": 0.5234131113423517,
+    "hybrid": 0.6045785639958376
+  },
+  "tie_rate_test": 0.0,
+  "operator": "span-conditional operator, tuned for the negative subset",
+  "weights": {
+    "negative": [
+      0.15,
+      1.0,
+      0.15,
+      0.4
+    ],
+    "hybrid": [
+      0.5,
+      1.0,
+      0.15,
+      0.6
+    ],
+    "positive": [
+      0.0,
+      0.6,
+      1.0,
+      0.0
+    ]
+  },
+  "train_breakdown": {
+    "all": 65.97903280351709,
+    "positive": 81.04312938816449,
+    "negative": 54.45544554455446,
+    "hybrid": 61.65556612749762
+  },
+  "img_centred": false,
+  "criterion": "argmax train negative s.t. train positive >= 80%",
+  "selected_on": "tr_rows"
+}

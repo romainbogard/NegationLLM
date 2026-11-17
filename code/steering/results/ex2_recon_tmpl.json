@@ -1,0 +1,26 @@
+{
+  "technique": "ex2_recon_tmpl",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.6033141697666554,
+    "positive": 0.9247743229689067,
+    "negative": 0.0891089108910891,
+    "hybrid": 0.7431018078020932
+  },
+  "test": {
+    "all": 0.58606695975651,
+    "positive": 0.9198067632850242,
+    "negative": 0.07180020811654526,
+    "hybrid": 0.740894901144641
+  },
+  "tie_rate_test": 0.004058167061210686,
+  "coef": {
+    "aff": 1.0,
+    "anc": 0.25,
+    "neg": -0.05
+  },
+  "normalise": true,
+  "k": 0.25,
+  "beta": 0.05,
+  "render": "tmpl"
+}

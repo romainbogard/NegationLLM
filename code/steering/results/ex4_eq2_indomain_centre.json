@@ -1,0 +1,26 @@
+{
+  "technique": "ex4_eq2_indomain_centre",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.551234359147785,
+    "positive": 0.7923771313941825,
+    "negative": 0.31903190319031904,
+    "hybrid": 0.5233111322549953
+  },
+  "test": {
+    "all": 0.5495434562056138,
+    "positive": 0.8077294685990338,
+    "negative": 0.3152965660770031,
+    "hybrid": 0.5057232049947971
+  },
+  "tie_rate_test": 0.0,
+  "operator": "Eq.2 with the in-domain span mean as the centre",
+  "lambda": 1.1,
+  "train_breakdown": {
+    "all": 55.1234359147785,
+    "positive": 79.23771313941825,
+    "negative": 31.903190319031903,
+    "hybrid": 52.33111322549953
+  },
+  "selected_on": "tr_rows"
+}

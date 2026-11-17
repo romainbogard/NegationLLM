@@ -1,0 +1,24 @@
+{
+  "technique": "ex2_baseline_eq2_published",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.5130199526547177,
+    "positive": 0.7953861584754263,
+    "negative": 0.1353135313531353,
+    "hybrid": 0.5718363463368221
+  },
+  "test": {
+    "all": 0.5018599932363882,
+    "positive": 0.8115942028985508,
+    "negative": 0.12174817898022892,
+    "hybrid": 0.5483870967741935
+  },
+  "tie_rate_test": 0.0,
+  "coef": {
+    "cap": 1.0,
+    "proj": -0.76,
+    "anc": 0.76
+  },
+  "normalise": true,
+  "lambda": 0.76
+}

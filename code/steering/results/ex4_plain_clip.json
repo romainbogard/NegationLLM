@@ -1,0 +1,18 @@
+{
+  "technique": "ex4_plain_clip",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.40142035847142377,
+    "positive": 0.6920762286860582,
+    "negative": 0.0781078107810781,
+    "hybrid": 0.40532825880114176
+  },
+  "test": {
+    "all": 0.3824822455191072,
+    "positive": 0.6898550724637681,
+    "negative": 0.062434963579604576,
+    "hybrid": 0.37148803329864727
+  },
+  "tie_rate_test": 0.0,
+  "note": "untouched CLIP"
+}

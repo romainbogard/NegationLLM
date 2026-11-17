@@ -1,0 +1,27 @@
+{
+  "technique": "ex4_classmean_indomain",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.4041258031788975,
+    "positive": 0.7321965897693079,
+    "negative": 0.0539053905390539,
+    "hybrid": 0.39581351094196005
+  },
+  "test": {
+    "all": 0.39736219141021306,
+    "positive": 0.7468599033816425,
+    "negative": 0.047866805411030174,
+    "hybrid": 0.3704474505723205
+  },
+  "tie_rate_test": 0.0,
+  "geometry": "indomain",
+  "operator": "class-conditional mean difference",
+  "alpha": 0.1,
+  "train_breakdown": {
+    "all": 40.41258031788975,
+    "positive": 73.21965897693079,
+    "negative": 5.39053905390539,
+    "hybrid": 39.581351094196
+  },
+  "selected_on": "tr_rows"
+}

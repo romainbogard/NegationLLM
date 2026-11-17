@@ -1,0 +1,27 @@
+{
+  "technique": "ex2_recon_countanchor",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.6824484274602638,
+    "positive": 0.8034102306920762,
+    "negative": 0.5401540154015402,
+    "hybrid": 0.6907706945765937
+  },
+  "test": {
+    "all": 0.6763611768684478,
+    "positive": 0.8067632850241546,
+    "negative": 0.5598335067637877,
+    "hybrid": 0.6524453694068678
+  },
+  "tie_rate_test": 0.0010145417653026716,
+  "coef": {
+    "aff": 7.453333333333333,
+    "anc": 0.0533333333333334,
+    "anc_na": -0.37333333333333335,
+    "anc_nn": 0.0,
+    "neg": -0.05333333333333329,
+    "cap": 0.0
+  },
+  "normalise": true,
+  "note": "anchor weight = k0 + k1*n_aff + k2*n_neg"
+}

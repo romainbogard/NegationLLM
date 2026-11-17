@@ -1,0 +1,7 @@
+# Embedding caches and result dumps written by the notebooks (one .npz per layer, ~6 MB each)
+data/cache/
+
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/

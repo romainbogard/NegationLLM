@@ -1,0 +1,26 @@
+{
+  "technique": "ex4_eq2_published",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.501521812647954,
+    "positive": 0.7953861584754263,
+    "negative": 0.1397139713971397,
+    "hybrid": 0.5356803044719315
+  },
+  "test": {
+    "all": 0.49543456205613795,
+    "positive": 0.8144927536231884,
+    "negative": 0.13215400624349635,
+    "hybrid": 0.5150884495317378
+  },
+  "tie_rate_test": 0.0,
+  "operator": "Eq.2, published anchor",
+  "lambda": 0.7,
+  "train_breakdown": {
+    "all": 50.1521812647954,
+    "positive": 79.53861584754263,
+    "negative": 13.97139713971397,
+    "hybrid": 53.56803044719315
+  },
+  "selected_on": "tr_rows"
+}

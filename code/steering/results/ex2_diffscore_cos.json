@@ -1,0 +1,24 @@
+{
+  "technique": "ex2_diffscore_cos",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.5999323638823132,
+    "positive": 0.8886659979939819,
+    "negative": 0.03850385038503851,
+    "hybrid": 0.8116079923882017
+  },
+  "test": {
+    "all": 0.5803178897531281,
+    "positive": 0.9004830917874396,
+    "negative": 0.03537981269510926,
+    "hybrid": 0.7804370447450573
+  },
+  "tie_rate_test": 0.3145079472438282,
+  "coef": {
+    "affhat": 1.0,
+    "neghat": -0.0
+  },
+  "normalise": true,
+  "beta": 0.0,
+  "note": "same vector, cosine-scored"
+}

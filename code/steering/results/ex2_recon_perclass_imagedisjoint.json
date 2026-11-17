@@ -1,0 +1,20 @@
+{
+  "technique": "ex2_recon_perclass_imagedisjoint",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.820834747200543,
+    "positive": 0.9076620825147348,
+    "negative": 0.7780195865070729,
+    "hybrid": 0.7722772277227723
+  },
+  "test": {
+    "all": 0.8088978766430738,
+    "positive": 0.9092702169625246,
+    "negative": 0.7707676130389064,
+    "hybrid": 0.7435129740518962
+  },
+  "tie_rate_test": 0.0,
+  "c": 0.8,
+  "split": "image-disjoint",
+  "n_scalars": 18
+}

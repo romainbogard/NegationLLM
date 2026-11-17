@@ -1,0 +1,40 @@
+{
+  "technique": "ex4_span_subspace_imgcentred",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.6932702062901589,
+    "positive": 0.8916750250752257,
+    "negative": 0.47744774477447743,
+    "hybrid": 0.6917221693625119
+  },
+  "test": {
+    "all": 0.6777138992221846,
+    "positive": 0.8772946859903382,
+    "negative": 0.449531737773153,
+    "hybrid": 0.6909469302809573
+  },
+  "tie_rate_test": 0.0,
+  "operator": "span-conditional subspace operator + centred image cloud",
+  "weights": {
+    "negative": [
+      0.3,
+      0.0,
+      0.15,
+      0.45
+    ],
+    "hybrid": [
+      1.2,
+      0.0,
+      0.05,
+      0.45
+    ],
+    "positive": [
+      0.0,
+      0.3,
+      1.2,
+      0.0
+    ]
+  },
+  "train_all": 69.32702062901589,
+  "selected_on": "tr_rows"
+}

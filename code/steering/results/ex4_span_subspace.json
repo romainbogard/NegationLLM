@@ -1,0 +1,40 @@
+{
+  "technique": "ex4_span_subspace",
+  "model": "openai/clip-vit-base-patch32",
+  "train": {
+    "all": 0.6638484950963814,
+    "positive": 0.7331995987963892,
+    "negative": 0.6127612761276128,
+    "hybrid": 0.6422454804947669
+  },
+  "test": {
+    "all": 0.6567467027392627,
+    "positive": 0.7497584541062802,
+    "negative": 0.5848074921956296,
+    "hybrid": 0.6285119667013528
+  },
+  "tie_rate_test": 0.0,
+  "operator": "per-input span-conditional subspace operator",
+  "weights": {
+    "negative": [
+      0.15,
+      1.0,
+      0.15,
+      0.4
+    ],
+    "hybrid": [
+      0.5,
+      1.0,
+      0.15,
+      0.6
+    ],
+    "positive": [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "train_all": 66.38484950963814,
+  "selected_on": "tr_rows"
+}
